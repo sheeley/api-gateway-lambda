@@ -1,0 +1,11 @@
+#! /usr/bin/env bash
+
+set -eux
+
+cd cmd/api-example-com
+go get
+./build.sh
+
+cd ../..
+
+terraform apply
